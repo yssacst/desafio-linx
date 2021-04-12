@@ -5,16 +5,22 @@
     font-size:14px;
 }
 /***  HEADER  ***/
-.shape-head{
+.shape-header{ 
     background-color:#707070;
-    height:200px;
     text-align:center;
     padding-top:69px;
     color: #FFFFFF;
+    position: relative;
+    min-height:330px;
+    overflow:hidden;
 }
-.shape-top{
-    border-top: 100px solid #707070;
-    border-left: 1345px solid transparent;
+.shape-header::after {
+  content: '';
+  position: absolute;
+  bottom: -95%; left: 0; right: 0;
+  height:450px;
+  background:#FFF;
+  transform: skew(0deg, 6deg);
 }
 .title{
     font-size:40px;
@@ -204,15 +210,46 @@ main{
 /***  FIM MAIN ***/
 
 /***  FOOTER  ***/
-.shape-footer{
+/* .shape-footer{
     background-color:#707070;
     height:100px;
-    text-align:center;
     color:#FFFFFF;
     font-size: 12px;
 }
 .shape-bottom{
     border-bottom: 90px solid #707070;
     border-left: 1345px solid transparent;
+} */
+.shape-footer{ 
+    background-color:#707070;
+    text-align:center;
+    font-size: 12px;
+    /* padding-bottom:69px; */
+    color: #FFFFFF;
+    position: relative;
+    min-height:350px;
+    overflow:hidden;
+    bottom:0;
+    width:100%;
+}
+.shape-footer::after {
+    content: '';
+    position: absolute;
+    bottom: 50%; left: 0; right: 0;
+    height:250px;
+    background-color: #FFFFFF;
+    transform: skew(0deg, -6deg);
+}
+.shape-footer .copy{
+    bottom: 35px;
+    width: 100%;
+    position:absolute;
 }
 /***  FIM FOOTER  ***/
+
+/*** MOBILE ***/
+@media (min-width: 700px) { 
+  
+
+}
+/*** FIM MOBILE ***/
