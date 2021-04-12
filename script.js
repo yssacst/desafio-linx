@@ -7,14 +7,16 @@ function showProducts(url){
     .then(data =>{
             const html = data.products.map( (product) => {
                 return `<div class="produto">
-                        <img src=https:${product.image} class="img-product">
-                        <p class="name-product">${product.name}</p>
-                        <p class="desc-product">${product.description}</p>
-                        <p class="oldprice-product">De: ${product.oldPrice},00</p>
-                        <p class="price-product">Por: R$${product.price},00</p>
-                        <p class="payment-product">ou ${product.installments.count}x de R$${product.installments.value}</p>
-                        <button class="btn">Comprar</button>
-                    </div>`
+                            <img src=https:${product.image} class="img-product">
+                            <div>
+                                <p class="name-product">${product.name}</p>
+                                <p class="desc-product">${product.description}</p>
+                                <p class="oldprice-product">De: ${product.oldPrice},00</p>
+                                <p class="price-product">Por: R$${product.price},00</p>
+                                <p class="payment-product">ou ${product.installments.count}x de R$${product.installments.value}</p>
+                                <button class="btn">Comprar</button>
+                            </div>
+                        </div>`
             },
             nextPage = "https://" + data.nextPage
         ).join('');
