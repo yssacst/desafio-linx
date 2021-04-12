@@ -248,16 +248,35 @@ main{
 /***  FIM FOOTER  ***/
 
 /*** MOBILE ***/
-@media (max-width: 768px) { 
-  
+@media (max-width: 600px) { 
+    .shape-header{
+        padding:16px;
+        padding-top: 66px;
+        min-height: 190px;
+    }
+    .shape-header::after {
+        content: '';
+        position: absolute;
+        bottom: -95%; left: 0; right: 0;
+        height:410px;
+        background:#FFF;
+        transform: skew(0deg, 16deg);
+      }
+    .subtitle-2, .subtitle-1, .title{
+        text-align:left;
+    }
     .div-top-buttons{
         max-width:700px;
-        margin: 10px;
-        padding: 20px;
-        justify-content: space-around;
-        border:1px solid red;
         display:flex;
         flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 56px 0 0 0;
+        margin:0;
+    }
+    .div-top-buttons .btn{
+        width:160px;
+        margin:0  0 10px 0;
+        border: 1px solid #707070;
         z-index: 1;
     }
     main{
