@@ -45,7 +45,21 @@
     padding:10px;
     color:#888888;
     font-size: 14px;
+    cursor: pointer;
 }
+.btn-large{
+    width:260px;
+    height:39px;
+    border: 1px solid #707070;
+    border-radius: 4px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+    padding:10px;
+    color:#888888;
+     cursor: pointer;
+    font-size: 16px;
+}
+
 /***  FIM HEADER  ***/
 
 /***  MAIN  ***/
@@ -116,7 +130,6 @@ main{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    
 }
 .produto{ 
     width:200px;
@@ -126,7 +139,6 @@ main{
 .img-product{
     width: 200px;
     height: 150px;
-    border: 1px solid #707070;
 }
 .name-product{
     font-size: 14px;
@@ -153,6 +165,15 @@ main{
     margin-top: 16px;
     padding:auto;
 }
+#s-product{
+    justify-content: center;
+    text-align:center;
+}
+#s-product .btn-large{
+    margin-left: auto;
+    margin-right: auto;
+    width:260px;
+}
 
 #s-share{
     text-align: center;
@@ -173,9 +194,7 @@ main{
     width:300px;
     margin: 5px;
 }
-#frm-share .btn{
-    width:260px;
-    height:39px;
+#frm-share .btn-large{
     margin-top: 50px;
 }
 .break{
@@ -189,6 +208,8 @@ main{
     background-color:#707070;
     height:100px;
     text-align:center;
+    color:#FFFFFF;
+    font-size: 12px;
 }
 .shape-bottom{
     border-bottom: 90px solid #707070;

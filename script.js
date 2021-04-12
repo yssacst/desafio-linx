@@ -10,8 +10,8 @@ function showProducts(url){
                         <img src=https:${product.image} class="img-product">
                         <p class="name-product">${product.name}</p>
                         <p class="desc-product">${product.description}</p>
-                        <p class="oldprice-product">De: ${product.oldPrice}</p>
-                        <p class="price-product">Por: R$${product.price}</p>
+                        <p class="oldprice-product">De: ${product.oldPrice},00</p>
+                        <p class="price-product">Por: R$${product.price},00</p>
                         <p class="payment-product">ou ${product.installments.count}x de R$${product.installments.value}</p>
                         <button class="btn">Comprar</button>
                     </div>`
