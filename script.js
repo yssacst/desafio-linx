@@ -20,12 +20,12 @@ function showProducts(url){
             },
             nextPage = "https://" + data.nextPage
         );
-        document.querySelector("#produto").innerHTML = html;
+        document.querySelector("#product").innerHTML = html;
     })
 
 }
 
-function moreProduct(){
+function moreProducts(){
     showProducts(nextPage)
 }
 
