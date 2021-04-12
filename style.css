@@ -2,6 +2,7 @@
     padding:0;
     margin:0;
     font-family: Helvetica;
+    font-size:14px;
 }
 /***  HEADER  ***/
 .shape-head{
@@ -53,7 +54,7 @@ main{
     padding-right: 200px;
     justify-content: center;
 }
-#algoritmo{
+#s-algoritmo{
     display: flex;
     color:#888888;
     justify-content: space-between;
@@ -109,7 +110,7 @@ main{
 }
 .div-linha{
     width:90%;
-    border-top: 1px solid #888;
+    border-top: 1px solid #888888;
 }
 #product{
     display: flex;
@@ -151,6 +152,35 @@ main{
     height:30px;
     margin-top: 16px;
     padding:auto;
+}
+
+#s-share{
+    text-align: center;
+    color:#888888;
+}
+#s-share #frm-share{
+    display:flex;
+    flex-wrap: wrap;
+    text-align: left;
+    margin-top: 39px;
+    justify-content:center;
+}
+#frm-share .frm-input{
+    text-decoration: none;
+    border: 1px solid #707070;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    height:30px;
+    width:300px;
+    margin: 5px;
+}
+#frm-share .btn{
+    width:260px;
+    height:39px;
+    margin-top: 50px;
+}
+.break{
+    flex-basis: 100%;
+    height: 0;
 }
 /***  FIM MAIN ***/
 
