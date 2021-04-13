@@ -7,6 +7,10 @@ Está é a solução desenvolvida por mim para o desafio proposto pela Linx.
  A solução para o layout de _Email_ se encontra no arquivo _email.html_, localizado no diretório raiz. O _CSS_ que complementa a solução se encontra na pasta _css_ e o _JS_ no corpo da solução _email.html_.
 
 ### Teste você mesmo
+
+Live Preview: [https://desafio-linx-yssacst.netlify.app/](https://desafio-linx-yssacst.netlify.app/)
+Repositório: [https://github.com/yssacst/desafio-linx](https://github.com/yssacst/desafio-linx)
+
 Para testar no seu próprio computador, basta fazer o download deste repositória e abrir o arquivo _index.html_ no seu navegador. 
 
 _Solução desenvolvida e testada no navegador Google Chrome_
