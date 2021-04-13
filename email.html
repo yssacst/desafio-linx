@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/email.css" rel="stylesheet">
+        <title>Desafio Linx</title>
+        <script>
+            var url = "https://frontend-intern-challenge-api.iurykrieger.now.sh/products?page=1"
+
+            fetch(url)
+            .then(r => r.json())
+            .then(data =>{
+                var html = '';
+                for(var i = 0; i < 2; i ++){
+                    html += `<div class="produto">
+                            <img src=https:${data.products[i].image} class="img-product">
+                            <div>
+                                <p class="name-product">${data.products[i].name}</p>
+                                <p class="desc-product">${data.products[i].description}</p>
+                                <p class="oldprice-product">De: ${data.products[i].oldPrice},00</p>
+                                <p class="price-product">Por: R$${data.products[i].price},00</p>
+                                <p class="payment-product">ou ${data.products[i].installments.count}x de R$${data.products[i].installments.value}</p>
+                                <button class="btn">Comprar</button>
+                            </div>
+                        </div>`
+                    }
+                document.querySelector("#product").innerHTML = html;
+            })
+        </script>
+    </head>
+    <body>
+        <header>
+            <div class="shape-header-email">
+                <p class="subtitle-1">uma seleção de produtos</p>
+                <p class="title">especial para você</p>
+                <p class="subtitle-2">Todos os produtos desta lista foram selecionados a partir da sua navegação. Aproveite!</p>
+            </div>
+        </header>
+        <main>
+            <section class="s-apresentation">
+                <p class="email-title">Olá, Fulano</p>
+                <p class="email-text">
+                    Fizemos uma lista especial de produtos apenas para você. Isso mesmo: nesta 
+                    lista temos só produtos que você pode gostar. Seu amigo Ciclano lhe recomendou essa 
+                    lista especial. Olha só:
+                </p>
+            </section>
+
+            <section class="s-product-email">
+
+                <div id="product"></div>
+                <button class="btn-large">Tem muito mais aqui. Vem ver!</button>
+            </section>
+        </main>
+        <footer>
+            <div class="shape-footer">
+                <div class="copy">
+                    <p>Testando suas habilidades em HTML, CSS e JS.</p>
+                    <p> Linx Impulse</p> 
+                    <p>2019</p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

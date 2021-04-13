@@ -248,7 +248,7 @@ main{
 /***  FIM FOOTER  ***/
 
 /*** MOBILE ***/
-@media (max-width: 600px) { 
+@media (max-width: 599px) { 
     .shape-header{
         padding:16px;
         padding-top: 66px;

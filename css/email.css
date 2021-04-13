@@ -1,0 +1,150 @@
+/**  EMAIL **/
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica;
+    font-size:14px;
+}
+.shape-header-email{ 
+    background-color:#707070;
+    text-align:center;
+    padding-top:69px;
+    color: #FFFFFF;
+    position: relative;
+    min-height:280px;
+    overflow:hidden;
+}
+.shape-header-email::after {
+  content: '';
+  position: absolute;
+  bottom: -95%; left: 0; right: 0; 
+  height:450px;
+  background:#FFF;
+  transform: skew(0deg, 6deg);
+}
+.shape-header-email .subtitle-2{
+    padding-left: 120px;
+    padding-right: 120px;
+}
+.s-apresentation{
+    padding: 0 21px 0 21px;
+}
+.title{
+    font-size:40px;
+    font-weight: bold;
+    letter-spacing: 0px;
+}
+.subtitle-1{
+    font-size:20px;
+}
+.subtitle-2{
+    font-size:14px;
+    margin-top: 24px;
+}
+.email-title{
+    color:#888888;
+    font-size: 20px;
+}
+.email-text{
+    font-size: 12px;
+    color:#888888;
+    margin-top: 9px;
+    height: 60px;
+}
+
+.s-product-email{
+    padding: 0 80px 0 80px;
+    text-align:center;
+}
+.btn{
+    text-decoration: none;
+    width:160px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    border-radius: 4px;
+    opacity: 1;
+    padding:10px;
+    color:#888888;
+    font-size: 14px;
+    cursor: pointer;
+}
+.btn-large{
+    width:260px;
+    height:39px;
+    border: 1px solid #707070;
+    border-radius: 4px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+    padding:10px;
+    color:#888888;
+     cursor: pointer;
+    font-size: 16px;
+}
+
+#product{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;width: 100%;
+}
+.produto{ 
+    width:200px;
+    color: #888888;
+    margin-bottom: 39px;
+}
+.img-product{
+    width: 200px;
+    height: 150px;
+}
+.name-product{
+    font-size: 14px;
+}
+.desc-product{
+    font-size: 12px;
+    margin-top: 10px;
+}
+.oldprice-product{
+    font-size: 12px;
+}
+.price-product{
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 7px;
+}
+.payment-product{
+    font-size: 12px;
+    margin-top: 6px;
+}
+.produto .btn{
+    width:100%;
+    height:30px;
+    margin-top: 16px;
+    padding:auto;
+}
+
+.shape-footer{ 
+    background-color:#707070;
+    text-align:center;
+    font-size: 12px;
+    /* padding-bottom:69px; */
+    color: #FFFFFF;
+    position: relative;
+    min-height:180px;
+    overflow:hidden;
+    bottom:0;
+    width:100%;
+}
+.shape-footer::after {
+    content: '';
+    position: absolute;
+    bottom: 50%; left: 0; right: 0;
+    height:150px;
+    background-color: #FFFFFF;
+    transform: skew(0deg, -6deg);
+}
+.shape-footer .copy{
+    bottom: 15px;
+    width: 100%;
+    position:absolute;
+    font-size: 12px;
+}
+/** FIM EMAIL **/
